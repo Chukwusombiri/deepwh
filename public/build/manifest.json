@@ -1,6 +1,22 @@
 {
+  "public/fonts/Optima-Bold-New.woff": {
+    "file": "assets/Optima-Bold-New-CvYalKog.woff",
+    "src": "public/fonts/Optima-Bold-New.woff"
+  },
+  "public/fonts/Optima-Bold.ttf": {
+    "file": "assets/Optima-Bold-BeazXKXR.ttf",
+    "src": "public/fonts/Optima-Bold.ttf"
+  },
+  "public/fonts/Optima-Bold.woff": {
+    "file": "assets/Optima-Bold-CcBM1OEb.woff",
+    "src": "public/fonts/Optima-Bold.woff"
+  },
+  "public/fonts/Optima-Bold.woff2": {
+    "file": "assets/Optima-Bold-CP1nrIN_.woff2",
+    "src": "public/fonts/Optima-Bold.woff2"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-B5ib8j0q.css",
+    "file": "assets/app-Btp4KN-0.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },

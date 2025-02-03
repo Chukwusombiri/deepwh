@@ -4,12 +4,38 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-primary: #506bfa;  
+    --color-primary: #506bfa;
     --color-heading: #475569;
     --color-heading-primary: #4D6BFE;
     --color-para-light: #94A3B8;
-    --color-para-dark: #64748B;      
-  }
+    --color-para-dark: #64748B;
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url('../../public/fonts/Optima-Bold.woff2') format('woff2'),
+         url('../../public/fonts/Optima-Bold.woff') format('woff'),
+         url('../../public/fonts/Optima-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optima-Bold';
+    src: url('../../public/fonts/Optima-Bold-New.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.optima-bold{
+    font-family: "Optima-Bold", sans-serif !important;
+    font-optical-sizing: auto !important;  
+}
+
+.optima{
+    font-family: "Optima", sans-serif !important;
+    font-optical-sizing: auto !important;    
+}
 
 .inter-regular {
     font-family: "Inter", serif;
@@ -32,9 +58,9 @@
     font-style: normal;
 }
 
-.spline-sans{
+.spline-sans {
     font-family: "Spline Sans", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-  }
+}
