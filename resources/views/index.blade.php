@@ -1,21 +1,21 @@
 <x-app-layout>
     <section class="bg-center bg-cover" style="background-image: url('/images/home-banner.webp')">
-        <div class="h-screen md:min-h-screen bg-transparent dark:bg-slate-900/20 backdrop-blur-sm">
+        <div class="h-screen md:min-h-screen bg-transparent dark:bg-gray-900 backdrop-blur-sm">
             <x-navigation />
             <div class="relative w-full max-w-6xl mx-auto pt-16 md:pt-0 md:h-screen flex flex-col justify-center items-center px-6 md:px-8">                
                 <button type="button" x-on:click="toggleModal()"
-                    class="text-para-light dark:text-blue-600 outline-none focus:outline-none active:outline-none text-sm hover:underline cursor-pointer">
+                    class="text-para-light dark:text-slate-400 outline-none focus:outline-none active:outline-none text-sm hover:underline cursor-pointer">
                     🎉 {{ config('app.name') }}-R1 is now live and open source, rivaling OpenAI's Model o1. Available on
                     web, app, and API. Click for details.
                 </button>
-                <h1 class="text-6xl inter-bold text-center mt-12 mb-8 spline-sans text-blue-600">
+                <h1 class="text-5xl md:text-6xl inter-bold text-center mt-12 mb-8 spline-sans text-blue-600 dark:text-blue-500">
                     deepwhales
                 </h1>
-                <p class="text-3xl text-center text-heading dark:text-slate-900 inter-bold mb-12">Into the unknown</p>
+                <p class="text-3xl text-center text-heading dark:text-slate-100 inter-bold mb-12">Into the unknown</p>
                 <div class="w-full max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
                     <div x-on:click="toggleModal()"
                         class="cursor-pointer flex flex-col gap-2 bg-slate-50 dark:bg-gray-900 shadow shadow-gray-300 rounded-2xl p-6 focus:ring-2 focus:ring-heading-primary">
-                        <h3 class="text-xl text-heading-primary inter-bold capitalize">Start now</h3>
+                        <h3 class="text-xl text-heading-primary dark:text-blue-500 inter-bold capitalize">Start now</h3>
                         <div class="space-y-0.5">
                             <p class="text-sm text-para-dark">Free access to {{ config('app.name') }}-V3</p>
                             <p class="text-sm text-para-dark">Experience the intelligent model.</p>
@@ -23,7 +23,7 @@
                     </div>
                     <div x-on:click="toggleModal()"
                         class="cursor-pointer flex flex-col gap-2 bg-slate-50 dark:bg-gray-900 shadow shadow-gray-300 rounded-2xl p-6 focus:ring-2 focus:ring-heading-primary">
-                        <h3 class="text-xl text-heading-primary inter-bold capitalize">Get {{ config('app.name') }} App
+                        <h3 class="text-xl text-heading-primary dark:text-blue-500 inter-bold capitalize">Get {{ config('app.name') }} App
                         </h3>
                         <div class="space-y-0.5">
                             <p class="text-sm text-para-dark">Chat on the go with {{ config('app.name') }}-V3</p>

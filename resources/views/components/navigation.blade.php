@@ -19,14 +19,14 @@
                 <x-app-logo />
             </div>
             <div class="flex items-center gap-1.5 md:gap-4">
-                <button type="button" x-on:click="toggleModal()" class="cursor-pointer inter-semibold outline-none active:outline-none focus:outline-none text-heading text-sm dark:text-blue-600 inline-flex md:gap-0.5 pb-1 border-b border-heading dark:border-blue-600">
+                <button type="button" x-on:click="toggleModal()" class="cursor-pointer inter-semibold outline-none active:outline-none focus:outline-none text-heading text-sm dark:text-slate-300 inline-flex md:gap-0.5 pb-1 border-b border-heading dark:border-slate-300">
                     <span>API Platform</span>
                     <svg class="w-4 h-4 md:w-5 md:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
                         <path d="M17 7l-10 10"></path>
                         <path d="M8 7l9 0l0 9"></path>
                       </svg>
                 </button>
-                <button type="button" x-on:click="toggleModal()" class="cursor-pointer outline-none active:outline-none focus:outline-none  text-sm md:text-base text-para-light dark:text-blue-600">
+                <button type="button" x-on:click="toggleModal()" class="cursor-pointer outline-none active:outline-none focus:outline-none  text-sm md:text-base text-para-light dark:text-slate-400">
                     中文
                 </button>
                 <button x-on:click="toggleDark" x-bind:class="isDark ? 'justify-end' : 'justify-start'"
