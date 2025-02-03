@@ -1,8 +1,8 @@
 <x-app-layout>
     <section class="bg-center bg-cover" style="background-image: url('/images/home-banner.webp')">
-        <div class="min-h-screen bg-transparent dark:bg-slate-900/20 backdrop-blur-sm">
+        <div class="h-screen md:min-h-screen bg-transparent dark:bg-slate-900/20 backdrop-blur-sm">
             <x-navigation />
-            <div class="relative w-full max-w-6xl mx-auto h-screen flex flex-col justify-center items-center px-6 md:px-8">                
+            <div class="relative w-full max-w-6xl mx-auto md:h-screen flex flex-col justify-center items-center px-6 md:px-8">                
                 <button type="button" x-on:click="toggleModal()"
                     class="text-para-light dark:text-blue-600 outline-none focus:outline-none active:outline-none text-sm hover:underline cursor-pointer">
                     🎉 {{ config('app.name') }}-R1 is now live and open source, rivaling OpenAI's Model o1. Available on
