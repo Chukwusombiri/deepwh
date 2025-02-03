@@ -31,7 +31,7 @@
         {{ $slot }}
     </main>
     <div style="display: none" x-show="openModal" class="fixed inset-0 z-30 bg-gray-900/20 backdrop-blur-sm">
-        <div class="w-full h-full flex justify-center items-center">
+        <div class="w-full h-full flex justify-center items-center px-8">
             <div class="bg-white dark:bg-gray-700 rounded-xl max-w-md" x-on:click.away="openModal=false">
                 <div class="flex justify-end p-1">
                     <button x-on:click="openModal = false" type="button"

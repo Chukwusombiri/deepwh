@@ -2,7 +2,7 @@
     <section class="bg-center bg-cover" style="background-image: url('/images/home-banner.webp')">
         <div class="min-h-screen bg-transparent dark:bg-slate-900/20 backdrop-blur-sm">
             <x-navigation />
-            <div class="w-full max-w-6xl mx-auto h-screen flex flex-col justify-center items-center px-6 md:px-8">
+            <div class="relative w-full max-w-6xl mx-auto h-screen flex flex-col justify-center items-center px-6 md:px-8">                
                 <button type="button" x-on:click="toggleModal()"
                     class="text-para-light dark:text-blue-600 outline-none focus:outline-none active:outline-none text-sm hover:underline cursor-pointer">
                     🎉 {{ config('app.name') }}-R1 is now live and open source, rivaling OpenAI's Model o1. Available on
@@ -13,21 +13,20 @@
                 </h1>
                 <p class="text-3xl text-center text-heading dark:text-slate-900 inter-bold mb-12">Into the unknown</p>
                 <div class="w-full max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
-                    <div
-                        x-on:click="toggleModal()"
+                    <div x-on:click="toggleModal()"
                         class="cursor-pointer flex flex-col gap-2 bg-slate-50 dark:bg-gray-900 shadow shadow-gray-300 rounded-2xl p-6 focus:ring-2 focus:ring-heading-primary">
                         <h3 class="text-xl text-heading-primary inter-bold capitalize">Start now</h3>
                         <div class="space-y-0.5">
-                            <p class="text-sm text-para-dark">Free access to {{config('app.name')}}-V3</p>
+                            <p class="text-sm text-para-dark">Free access to {{ config('app.name') }}-V3</p>
                             <p class="text-sm text-para-dark">Experience the intelligent model.</p>
                         </div>
                     </div>
-                    <div
-                        x-on:click="toggleModal()"
+                    <div x-on:click="toggleModal()"
                         class="cursor-pointer flex flex-col gap-2 bg-slate-50 dark:bg-gray-900 shadow shadow-gray-300 rounded-2xl p-6 focus:ring-2 focus:ring-heading-primary">
-                        <h3 class="text-xl text-heading-primary inter-bold capitalize">Get {{config('app.name')}} App</h3>
+                        <h3 class="text-xl text-heading-primary inter-bold capitalize">Get {{ config('app.name') }} App
+                        </h3>
                         <div class="space-y-0.5">
-                            <p class="text-sm text-para-dark">Chat on the go with {{config('app.name')}}-V3</p>
+                            <p class="text-sm text-para-dark">Chat on the go with {{ config('app.name') }}-V3</p>
                             <p class="text-sm text-para-dark">Your free all-in-one AI tool</p>
                         </div>
                     </div>
@@ -38,54 +37,61 @@
     <section class="bg-white dark:bg-gray-900 py-20">
         <div class="w-full max-w-6xl mx-auto px-6 md:px-8">
             <h2 class="text-4xl text-heading inter-bold text-center mb-4 dark:text-slate-300">
-                {{config('app.name')}}-v3 Capabilities
+                {{ config('app.name') }}-v3 Capabilities
             </h2>
-            <p class="text-para-dark text-center">{{config('app.name')}}-V3 achieves a significant breakthrough in inference speed over previous models.</p>
-            <p class="text-para-dark text-center">It tops the leaderboard among open-source models and rivals the most advanced closed-source models globally.</p>
+            <p class="text-para-dark text-center">{{ config('app.name') }}-V3 achieves a significant breakthrough in
+                inference speed over previous models.</p>
+            <p class="text-para-dark text-center">It tops the leaderboard among open-source models and rivals the most
+                advanced closed-source models globally.</p>
             <div class="overflow-hidden mt-10 pt-10 border-t border-gray-300">
-                <div class="overflow-x-auto">
-                    <table class="w-full table-fixed border-collapse">
+                <div class="overflow-x-auto w-full">
+                    <table class="min-w-full table-fixed border-collapse">
                         <thead>
                             <tr>
                                 <th class="w-[10%] p-4 text-center">
-                                   
+
                                 </th>
                                 <th class="w-[20%] p-4 text-center">
-                                    <span class="inter-bold text-heading text-sm dark:text-slate-300">Benchmark (Metric)</span>
+                                    <span class="inter-bold text-heading text-sm dark:text-slate-300">Benchmark
+                                        (Metric)</span>
                                 </th>
                                 <th class="w-[15%] p-4 bg-blue-100 rounded-t-2xl whitespace-nowrap text-center">
-                                    <span class="inter-bold text-blue-700 text-sm">{{ config('app.name') }}-V3</span>                                    
+                                    <span class="inter-bold text-blue-700 text-sm">{{ config('app.name') }}-V3</span>
                                 </th>
                                 <th class="p-4 text-center whitespace-nowrap">
-                                    <p class="inter-bold text-heading text-sm dark:text-slate-300">{{ config('app.name') }}-V3</p>
+                                    <p class="inter-bold text-heading text-sm dark:text-slate-300">
+                                        {{ config('app.name') }}-V3</p>
                                     <p class="text-para-light text-sm inter-regular mt-4 dark:text-gray-300">0905</p>
                                 </th>
                                 <th class="p-4 text-center whitespace-nowrap">
-                                    <p class="inter-bold text-heading text-sm dark:text-slate-300">Owen-2.5</p>   
-                                    <p class="text-para-light text-sm inter-regular mt-4 dark:text-gray-300">72B-Inst</p>                                 
+                                    <p class="inter-bold text-heading text-sm dark:text-slate-300">Owen-2.5</p>
+                                    <p class="text-para-light text-sm inter-regular mt-4 dark:text-gray-300">72B-Inst
+                                    </p>
                                 </th>
                                 <th class="p-4 text-center whitespace-nowrap">
-                                    <p class="inter-bold text-heading text-sm dark:text-slate-300">Llama-3.1</p> 
-                                    <p class="text-para-light text-sm inter-regular mt-4 dark:text-gray-300">405B-Inst</p>                                   
+                                    <p class="inter-bold text-heading text-sm dark:text-slate-300">Llama-3.1</p>
+                                    <p class="text-para-light text-sm inter-regular mt-4 dark:text-gray-300">405B-Inst
+                                    </p>
                                 </th>
                                 <th class="p-4 text-center whitespace-nowrap">
                                     <p class="inter-bold text-heading text-sm dark:text-slate-300">Claude-3.5</p>
-                                    <p class="text-para-light text-sm inter-regular mt-4 dark:text-gray-300">Sonnet-1022</p>                                    
+                                    <p class="text-para-light text-sm inter-regular mt-4 dark:text-gray-300">Sonnet-1022
+                                    </p>
                                 </th>
                                 <th class="p-4 text-center whitespace-nowrap">
-                                    <p class="inter-bold text-heading text-sm dark:text-slate-300">GPT-Vo</p> 
-                                    <p class="text-para-light text-sm inter-regular mt-4 dark:text-gray-300">0513</p>                                   
+                                    <p class="inter-bold text-heading text-sm dark:text-slate-300">GPT-Vo</p>
+                                    <p class="text-para-light text-sm inter-regular mt-4 dark:text-gray-300">0513</p>
                                 </th>
                             </tr>
                         </thead>
-                        
+
                         <tbody>
                             <tr>
                                 <td class="w-[10%] p-4 text-center"></td>
-                                <td class="w-1/4 p-4 text-center">
+                                <td class="w-[20%] p-4 text-center">
                                     <span class="text-para-dark text-sm dark:text-slate-400">Architecture</span>
                                 </td>
-                                <td class="p-4 text-center bg-blue-100">
+                                <td class="w-[15%] p-4 text-center bg-blue-100">
                                     <span class="text-blue-700 text-sm">MoE</span>
                                 </td>
                                 <td class="p-4 text-center">
@@ -178,7 +184,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="p-4 text-center">                                    
+                                <td class="p-4 text-center">
                                 </td>
                                 <td class="w-1/4 p-4 text-center">
                                     <span class="text-para-dark text-sm dark:text-slate-400">MMLU-Redux (EM)</span>
@@ -253,7 +259,8 @@
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark">English</td>
                                 <td class="w-1/4 p-4 text-center">
-                                    <span class="text-para-dark text-sm dark:text-slate-400">IF-Eval (Prompt Strict)</span>
+                                    <span class="text-para-dark text-sm dark:text-slate-400">IF-Eval (Prompt
+                                        Strict)</span>
                                 </td>
                                 <td class="p-4 text-center bg-blue-100">
                                     <span class="text-blue-700 text-sm">86.1</span>
@@ -277,7 +284,8 @@
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark"></td>
                                 <td class="w-1/4 p-4 text-center">
-                                    <span class="text-para-dark text-sm dark:text-slate-400">GPQA-Diamond (Pass@1)</span>
+                                    <span class="text-para-dark text-sm dark:text-slate-400">GPQA-Diamond
+                                        (Pass@1)</span>
                                 </td>
                                 <td class="p-4 text-center bg-blue-100">
                                     <span class="text-blue-700 text-sm inter-semibold">59.1</span>
@@ -374,7 +382,8 @@
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark"></td>
                                 <td class="w-1/4 p-4 text-center">
-                                    <span class="text-para-dark text-sm dark:text-slate-400">HumanEval-Mul (Pass@1)</span>
+                                    <span class="text-para-dark text-sm dark:text-slate-400">HumanEval-Mul
+                                        (Pass@1)</span>
                                 </td>
                                 <td class="p-4 text-center bg-blue-100">
                                     <span class="text-blue-700 text-sm inter-semibold">82.6</span>
@@ -398,7 +407,8 @@
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark"></td>
                                 <td class="w-1/4 p-4 text-center">
-                                    <span class="text-para-dark text-sm dark:text-slate-400">LiveCodeBench (Pass@1-COT)</span>
+                                    <span class="text-para-dark text-sm dark:text-slate-400">LiveCodeBench
+                                        (Pass@1-COT)</span>
                                 </td>
                                 <td class="p-4 text-center bg-blue-100">
                                     <span class="text-blue-700 text-sm inter-semibold">40.5</span>
@@ -422,7 +432,8 @@
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark"></td>
                                 <td class="w-1/4 p-4 text-center">
-                                    <span class="text-para-dark text-sm dark:text-slate-400">LiveCodeBench (Pass@1)</span>
+                                    <span class="text-para-dark text-sm dark:text-slate-400">LiveCodeBench
+                                        (Pass@1)</span>
                                 </td>
                                 <td class="p-4 text-center bg-blue-100">
                                     <span class="text-blue-700 text-sm inter-semibold">37.6</span>
@@ -446,7 +457,8 @@
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark">Code</td>
                                 <td class="w-1/4 p-4 text-center">
-                                    <span class="text-para-dark text-sm dark:text-slate-400">Codeforces (Percentile)</span>
+                                    <span class="text-para-dark text-sm dark:text-slate-400">Codeforces
+                                        (Percentile)</span>
                                 </td>
                                 <td class="p-4 text-center bg-blue-100">
                                     <span class="text-blue-700 text-sm inter-semibold">51.6</span>
@@ -470,7 +482,8 @@
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark"></td>
                                 <td class="w-1/4 p-4 text-center">
-                                    <span class="text-para-dark text-sm dark:text-slate-400">SWE Verified (Resolved)</span>
+                                    <span class="text-para-dark text-sm dark:text-slate-400">SWE Verified
+                                        (Resolved)</span>
                                 </td>
                                 <td class="p-4 text-center bg-blue-100">
                                     <span class="text-blue-700 text-sm">42.0</span>
@@ -518,7 +531,8 @@
                             <tr class="border-b border-gray-300">
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark"></td>
                                 <td class="w-1/4 p-4 text-center">
-                                    <span class="text-para-dark text-sm dark:text-slate-400">Aider-Polyglot (Acc.)</span>
+                                    <span class="text-para-dark text-sm dark:text-slate-400">Aider-Polyglot
+                                        (Acc.)</span>
                                 </td>
                                 <td class="p-4 text-center bg-blue-100">
                                     <span class="text-blue-700 text-sm inter-semibold">49.6</span>
@@ -664,7 +678,8 @@
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark"></td>
                                 <td class="w-1/4 p-4 text-center">
-                                    <span class="text-para-dark text-sm dark:text-slate-400">C-SimpleQA (Correct)</span>
+                                    <span class="text-para-dark text-sm dark:text-slate-400">C-SimpleQA
+                                        (Correct)</span>
                                 </td>
                                 <td class="p-4 text-center bg-blue-100 rounded-b-xl">
                                     <span class="text-blue-700 text-sm inter-semibold">64.1</span>
@@ -687,7 +702,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
