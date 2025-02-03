@@ -33,7 +33,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-white dark:bg-gray-900 py-20">
+    {{-- <section class="bg-white dark:bg-gray-900 py-20">
         <div class="w-full max-w-6xl mx-auto px-6 md:px-8">
             <h2 class="text-4xl text-heading inter-bold text-center mb-4 dark:text-slate-300">
                 {{ config('app.name') }}-v3 Capabilities
@@ -134,7 +134,7 @@
                                     <span class="text-para-dark text-sm dark:text-slate-400">16.0</span>
                                 </td>
                             </tr>
-                            {{-- new section --}}
+                            
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark"></td>
                                 <td class="w-1/4 p-4 text-center">
@@ -207,7 +207,7 @@
                                     <span class="text-para-dark text-sm dark:text-slate-400">10.8</span>
                                 </td>
                             </tr>
-                            {{-- new section --}}
+                            
                             <tr>
                                 <td class="w-[10%] p-4 text-center text-sm inter-semibold text-para-dark"></td>
                                 <td class="w-1/4 p-4 text-center">
@@ -286,5 +286,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 </x-app-layout>
