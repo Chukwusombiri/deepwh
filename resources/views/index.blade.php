@@ -1,5 +1,5 @@
 <x-app-layout>
-    <section class="bg-center bg-cover" style="background-image: url('/images/home-banner.webp')">
+    <section class="bg-center bg-cover mb-10" style="background-image: url('/images/home-banner.webp')">
         <div class="h-screen md:min-h-screen bg-transparent dark:bg-gray-900 backdrop-blur-sm">
             <x-navigation />
             <div class="relative w-full max-w-6xl mx-auto pt-16 md:pt-0 md:h-screen flex flex-col justify-center items-center px-6 md:px-8">                

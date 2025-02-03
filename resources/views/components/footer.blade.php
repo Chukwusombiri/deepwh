@@ -1,4 +1,4 @@
-<footer class="border-t border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-900 pt-10 pb-4 px-6 md:px-10">    
+<footer class="border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 pt-10 pb-4 px-6 md:px-10">    
     <div class="w-full max-w-6xl mx-auto">
         <div class="w-full flex justify-center">
             <x-app-logo />

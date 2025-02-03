@@ -21,7 +21,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="antialiased relative inter-regular" x-data="{
+<body class="antialiased relative inter-regular bg-white dark:bg-gray-900" x-data="{
     openModal: false,
     toggleModal() {
         this.openModal = !this.openModal;        
