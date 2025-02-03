@@ -8,7 +8,7 @@
                     🎉 {{ config('app.name') }}-R1 is now live and open source, rivaling OpenAI's Model o1. Available on
                     web, app, and API. Click for details.
                 </button>
-                <h1 class="text-6xl inter-bold text-center mt-12 mb-8 tracking-wide spline-sans text-blue-600">
+                <h1 class="text-6xl inter-bold text-center mt-12 mb-8 spline-sans text-blue-600">
                     deepwhales
                 </h1>
                 <p class="text-3xl text-center text-heading dark:text-slate-900 inter-bold mb-12">Into the unknown</p>
