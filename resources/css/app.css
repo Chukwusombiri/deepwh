@@ -64,3 +64,24 @@
     font-weight: 600;
     font-style: normal;
 }
+
+.sora-semibold {
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.sora-bold {
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sora-extrabold {
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}

@@ -7,7 +7,7 @@
                     class="max-w-3xl text-para-light dark:text-slate-400 outline-none focus:outline-none active:outline-none text-sm hover:underline cursor-pointer">
                     {{ config('app.name') }} will be live post launch and open source, on-chain research intelligent agent trained with reinforcement learning. click for docs…
                 </button>
-                <h1 class="optima text-5xl md:text-6xl inter-bold text-center mt-12 mb-8 text-blue-600 dark:text-blue-500">
+                <h1 class="sora-extrabold text-5xl md:text-6xl inter-bold text-center mt-12 mb-8 text-blue-600 dark:text-blue-500">
                     deepwhales
                 </h1>
                 <p class="text-3xl text-center text-heading dark:text-slate-100 inter-bold mb-12">Into the ocean</p>
