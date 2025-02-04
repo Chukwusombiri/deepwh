@@ -16,7 +16,7 @@
                         class="cursor-pointer flex flex-col gap-2 bg-slate-50 dark:bg-gray-900 shadow shadow-gray-300 rounded-2xl p-6 focus:ring-2 focus:ring-heading-primary">
                         <h3 class="text-xl text-heading-primary dark:text-blue-500 inter-bold capitalize">Start now</h3>
                         <div class="space-y-0.5">
-                            <p class="text-sm text-para-dark">Free access to {{ config('app.name') }}-V3</p>
+                            <p class="text-sm text-para-dark">Free access to {{ config('app.name') }}-V1</p>
                             <p class="text-sm text-para-dark">Experience the intelligent on-chain agent</p>
                         </div>
                     </div>
